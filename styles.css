@@ -1,0 +1,55 @@
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: pink;
+    text-align: center;
+    font-family: Major Mono Display;
+}
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    background-color: violet;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+section {
+    margin-top: 20px; 
+}
+
+#resultsTable {
+    margin-bottom: 20px; 
+}
+
+button {
+    margin-top: 20px; 
+    background-color: violet;
+    font-family: Major Mono Display;
+    font-size: 15px;
+    border: 2px solid fuchsia;
+    border-radius: 5px;
+}
+#userId{
+    width: 15px;
+    margin-top: 20px;
+    padding: 5px;
+    font-family: Major Mono Display;
+    border: 2px solid fuchsia;
+    border-radius: 5px;
+}
+
+#resultData {
+    margin-top: 20px;
+    padding: 5px;
+    font-family: Major Mono Display;
+}
+.conteinerRequestData{
+    background-color: pink;
+}
