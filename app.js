@@ -1,12 +1,12 @@
 const uri = "https://jsonplaceholder.typicode.com/users";
 
-async function obtainUserData() {
+async function askForInformation() {
     const response = await fetch(uri);
     const users = await response.json();
-    const resultsBody = document.getElementById('resultsBody');
+    const result = document.getElementById('result');
     users.forEach(user => {
         const row = `<tr><td>${user.id}</td><td>${user.name}</td><td>${user.address.city}</td></tr>`;
-        resultsBody.insertAdjacentHTML('beforeend', row);
+        result.insertAdjacentHTML('beforeend', row);
     });
     console.log(users);
 }
@@ -33,4 +33,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('button').addEventListener('click', requestInformation);
 });
 
-obtainUserData();
+askForInformation();
